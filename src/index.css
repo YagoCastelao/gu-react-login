@@ -4,6 +4,8 @@
 
 body {
   @apply bg-no-repeat bg-cover bg-center min-h-screen;
-  background-image: url("/wallpaper.png");
+  background-image: url("/wallpaper2.jpg");
   color: #ffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }

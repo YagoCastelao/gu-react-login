@@ -11,16 +11,18 @@ const Login = () => {
 
   return (
     <div className="w-full h-screen flex items-center justify-center">
-      <div className="w-[90%] max-w-sm md:max-w-md lg:max-w-md p-5 bg-gray-900 flex-col flex items-center gap-3 rounded-xl shadow-slate-500 shadow-lg">
+      <div className="w-[90%] max-w-sm md:max-w-md lg:max-w-md p-5 bg-[#7dd3fc] flex-col flex items-center gap-3 rounded-xl shadow-slate-500 shadow-lg">
         <img src="/logo.png" alt="logo" className="w-12 md:w-14" />
-        <h1 className="text-lg md:text-xl font-semibold">Welcome Back</h1>
+        <h1 className="text-[#082f49] text-lg md:text-xl font-semibold">
+          Welcome Back
+        </h1>
         <p className="text-xs md:text-sm text-gray-500 text-center">
           Don't have an account? <span className="text-white">Sign up</span>
         </p>
 
         <div className="w-full flex flex-col gap-3">
-          <div className="w-full flex items-center gap-2 bg-gray-800 p-2 rounded-xl">
-            <MdAlternateEmail />
+          <div className="w-full flex items-center gap-2 bg-[#e0f2fe] p-2 rounded-xl">
+            <MdAlternateEmail className="text-[#082f49]" />
             <input
               type="email"
               placeholder="Email address"
@@ -28,8 +30,8 @@ const Login = () => {
             />
           </div>
 
-          <div className="w-full flex items-center gap-2 bg-gray-800 p-2 rounded-xl relative">
-            <FaFingerprint />
+          <div className="w-full flex items-center gap-2 bg-[#e0f2fe] p-2 rounded-xl relative">
+            <FaFingerprint className="text-[#082f49]" />
             <input
               type={showPassword ? "password" : "text"}
               placeholder="Password"
